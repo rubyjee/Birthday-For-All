@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MUSIK -->
+    <audio id="music" loop preload="auto">
+        <source src="assets/musik.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- TOMBOL MUSIK -->
+    <button
+        class="music-button"
+        id="musicButton"
+        type="button">
+        ♫
+    </button>
+
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+
+    <section class="opening" id="opening">
+
+        <div class="opening-content">
+
+            <div class="heart">
+                ♡
+            </div>
+
+            <p class="small-title">
+                A LITTLE SURPRISE FOR YOU
+            </p>
+
+            <h1>
+                Something
+                <span>Special</span>
+            </h1>
+
+            <p class="intro-text">
+                Ada sesuatu yang sudah dipersiapkan
+                khusus untukmu.
+            </p>
+
+            <button
+                class="main-button"
+                id="startButton"
+                type="button">
+
+                Buka Kejutan
+                <span>♡</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="main" class="hidden">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div>
+
+                <p class="small-title">
+                    TODAY IS YOUR DAY
+                </p>
+
+                <h1>
+                    Happy
+                    <span>Birthday</span>
+                </h1>
+
+                <p class="subtitle">
+                    For someone special ♡
+                </p>
+
+                <div class="scroll">
+
+                    <span>↓</span>
+
+                    <p>
+                        scroll down
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PESAN -->
+
+        <section class="section">
+
+            <p class="small-title">
+                A MESSAGE FOR YOU
+            </p>
+
+            <h2>
+                Hari ini adalah
+                <br>
+                hari yang spesial.
+            </h2>
+
+            <div class="line"></div>
+
+            <p class="paragraph">
+                Karena hari ini adalah hari ketika
+                seseorang yang begitu berharga
+                lahir ke dunia.
+            </p>
+
+            <p class="paragraph">
+                Jadi, aku ingin memberikan sedikit
+                kejutan untuk membuat hari ini
+                menjadi lebih berkesan.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             FOTO
+        ========================== -->
+
+        <section class="section">
+
+            <p class="small-title">
+                OUR LITTLE MEMORIES
+            </p>
+
+            <h2>
+                Some moments
+                <br>
+                worth remembering.
+            </h2>
+
+
+            <div class="photos">
+
+                <!-- FOTO 1 -->
+
+                <div class="photo-card">
+
+                    <img
+                        src="assets/foto1.jpg"
+                        alt="Foto kenangan pertama">
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+
+                <!-- FOTO 2 -->
+
+                <div class="photo-card middle">
+
+                    <img
+                        src="assets/foto2.jpg"
+                        alt="Foto kenangan kedua">
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+
+                <!-- FOTO 3 -->
+
+                <div class="photo-card">
+
+                    <img
+                        src="assets/foto3.jpg"
+                        alt="Foto kenangan ketiga">
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUOTE
+        ========================== -->
+
+        <section class="quote">
+
+            <div class="quote-mark">
+                “
+            </div>
+
+            <h2>
+                Some people make
+                <br>
+                the world feel
+                <br>
+                a little brighter.
+            </h2>
+
+            <p>
+                And you are one of them.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             SURAT
+        ========================== -->
+
+        <section class="section">
+
+            <div class="letter-box">
+
+                <div class="letter-icon">
+                    💌
+                </div>
+
+                <p class="small-title">
+                    A LETTER
+                </p>
+
+                <h2>
+                    Ada sesuatu
+                    <br>
+                    yang ingin kusampaikan.
+                </h2>
+
+                <p class="paragraph">
+                    Tidak panjang, tapi semoga
+                    bisa membuatmu tersenyum.
+                </p>
+
+                <button
+                    class="second-button"
+                    id="letterButton"
+                    type="button">
+
+                    Buka Surat ♡
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MODAL SURAT
+        ========================== -->
+
+        <div
+            class="modal"
+            id="letterModal">
+
+            <div
+                class="modal-bg"
+                id="modalBackground">
+            </div>
+
+
+            <div class="letter-paper">
+
+                <button
+                    class="close"
+                    id="closeLetter"
+                    type="button">
+
+                    ×
+
+                </button>
+
+
+                <div class="paper-heart">
+                    ♡
+                </div>
+
+                <p class="paper-title">
+                    DEAR YOU
+                </p>
+
+                <h2>
+                    Selamat
+                    <br>
+                    Ulang Tahun.
+                </h2>
+
+                <div class="line"></div>
+
+
+                <p>
+                    Selamat ulang tahun untuk kamu.
+                </p>
+
+                <p>
+                    Semoga bertambahnya usia membawa
+                    semakin banyak kebahagiaan,
+                    kesehatan, keberuntungan,
+                    dan hal-hal baik dalam hidupmu.
+                </p>
+
+                <p>
+                    Semoga semua impian yang sedang
+                    kamu perjuangkan perlahan menemukan
+                    jalannya.
+                </p>
+
+                <p>
+                    Jangan lupa untuk selalu menghargai
+                    dirimu sendiri, menikmati proses,
+                    dan tetap menjadi dirimu yang luar biasa.
+                </p>
+
+                <p>
+                    Terima kasih sudah menjadi bagian
+                    dari cerita yang indah.
+                </p>
+
+                <p class="signature">
+                    With love,
+                    <br>
+                    Someone who cares about you ♡
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             HADIAH
+        ========================== -->
+
+        <section class="section gift-section">
+
+            <p class="small-title">
+                ONE LAST SURPRISE
+            </p>
+
+            <h2>
+                Kamu kira
+                <br>
+                sudah selesai?
+            </h2>
+
+            <p class="paragraph">
+                Tunggu... masih ada satu hal lagi.
+            </p>
+
+            <button
+                class="gift-button"
+                id="giftButton"
+                type="button">
+
+                🎁
+
+                <span>
+                    Buka Hadiah
+                </span>
+
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL SURPRISE
+        ========================== -->
+
+        <section
+            class="final-screen hidden"
+            id="finalScreen">
+
+            <div id="confetti"></div>
+
+            <div class="final-content">
+
+                <div class="final-heart">
+                    ♥
+                </div>
+
+                <p class="small-title">
+                    FOR YOU
+                </p>
+
+                <h1>
+                    Happy Birthday,
+                    <span>Beautiful Soul.</span>
+                </h1>
+
+                <p>
+                    Semoga senyummu hari ini
+                    bertahan lebih lama.
+                </p>
+
+                <p>
+                    Semoga tahun ini menjadi
+                    salah satu tahun terbaikmu.
+                </p>
+
+                <div class="cake">
+                    🎂
+                </div>
+
+                <p class="end">
+                    Keep smiling.
+                    Keep shining. ♡
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
